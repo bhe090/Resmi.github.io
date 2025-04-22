@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: Orange;
+        font-family: Verdana;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 160px; /* space between links */
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #d41b1bef;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      
+      h1 {
+        color: #8a1414;
+        text-align: center;
+      }
+
+      
+      p {
+        font-size: 20px;
+        color: rgb(144, 106, 13);
+
+      }
+
+      .food-image {
+        width: 200px; 
+        height: auto; 
+        display: block;
+        margin: 0 auto; 
+        border-radius: 5px; 
+      }
+</html>
+</head>
+</style>
