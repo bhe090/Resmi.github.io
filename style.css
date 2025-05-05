@@ -1,9 +1,12 @@
 <style>
   body {
-    background-color: rgb(228, 228, 189);
+    background-color: rgb(179, 179, 85);
     font-family: Verdana;
   }
-
+  body {
+    background-color: rgb(228, 228, 192);
+    font-family: Verdana;
+  }
   h1 {
     color: #8a1414;
     text-align: center;
