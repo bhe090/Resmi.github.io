@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - My Recipe Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+  </nav>
+  <main>
+    <h2>Our Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-card side">
+        <img src="https://tse1.mm.bing.net/th/id/OIG3.TE.vZuos3L0DkbkeGPsX?cb=iwp1&pid=ImgGn" alt="Chicken Curry">
+        <div class="recipe-info">
+          <h3><a href="chicken curry.html">Chicken Curry</a></h3>
+          <p>Spicy and creamy chicken curry.</p>
+        </div>
+      </div>
+      <div class="recipe-card side">
+        <img src="https://tse2.mm.bing.net/th?id=OIG2.BpC3B3WgwS_i21gKMYmO&pid=ImgGn" alt="Mutton Biryani">
+        <div class="recipe-info">
+          <h3><a href="Mutton Biryani.html">Mutton Biryani</a></h3>
+          <p>Spicy and tasty Mutton Biryani.</p>
+        </div>
+      </div>
+      <div class="recipe-card side">
+        <img src="https://tse3.mm.bing.net/th?id=OIG1.EjlYoCUn4S5QtcuaPHvS&pid=ImgGn" alt="Shrimp Fry Rice">
+        <div class="recipe-info">
+          <h3><a href="Shrimp fry Rice.html">Shrimp Fry Rice</a></h3>
+          <p>Mouth-watering tasty Shrimp Fry Rice.</p>
+        </div>
+      </div>
+      <div class="recipe-card side">
+        <img src="https://tse4.mm.bing.net/th?id=OIG4.qbXJzDPDEQA5FFkOORCa&pid=ImgGn" alt="Pan Cake">
+        <div class="recipe-info">
+          <h3><a href="Pan Cake.html">Pan Cake</a></h3>
+          <p>Sweet and soft Pan Cake.</p>
+        </div>
+      </div>
+      <div class="recipe-card side">
+        <img src="https://tse1.mm.bing.net/th?id=OIG2.G.eJ4E2WxZbKb2yxWFge&pid=ImgGn" alt="Shahi Paneer">
+        <div class="recipe-info">
+          <h3><a href="Shahi Paneer.html">Shahi Paneer</a></h3>
+          <p>Creamy and flavourful Shahi Paneer.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <h1>🍽️ Here are some serving Suggestions Table</h1>
+
+<table id="customers">
+  <tr>
+    <th>Dish</th>
+    <th>Side Dish</th>
+    <th>Drink Pairing</th>
+  </tr>
+  <tr>
+    <td>Roast Chicken</td>
+    <td>Mashed Potatoes</td>
+    <td>White Wine</td>
+  </tr>
+  <tr>
+    <td>Fish Chilly</td>
+    <td>Spring Rolls</td>
+    <td>Iced Tea</td>
+  </tr>
+</table>
+
+  <footer>
+    <p><a href="https://www.facebook.com">Facebook</a> | <a href="https://www.instagram.com">Instagram</a></p>
+  </footer>
+  <script>
+    // used some js to make the hamburger menu work
+    const hamburger = document.getElementById("hamburger");
+    const navLinks  = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  
+</body>
+</html>

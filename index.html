@@ -1,41 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Recipe Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: rgb(238, 238, 225);
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background-color:rgb(216, 216, 162);
+    }
+
+    .logo {
+      font-size: 40px;
+      color: #d41b1b;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #d41b1b;
+      font-size: 20px;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 850px;
+      height: 600px;
+      border-radius: 8px;
+    }
+
+    .text-container {
+      max-width: 820px;
+    }
+
+    h2 {
+      color: #8a1414;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      color: rgb(144, 106, 13);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: #e21515;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container img {
+        height: auto;
+      }
+
+      .text-container {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="recipes.html">Recipes</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact us</a>
-      </nav>
 
-
+  <nav>
+    <div class="logo">Cooking Blog!</div>
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
 
   <main>
-    <h1>Cooking Blog!</h1>
-
-
-
-    <p>Explore easy delicious recipes and cooking tips that make every meal special.</p> 
-        <p>Weather you are beginner or pro, lets cook up something tasty together.</p>
-        
-        <div class="image-container">
-            <img src= https://live.staticflickr.com/8715/16947318656_4c6cbc3091_b.jpg>
-        </div>
+    <div class="image-container">
+      <img src="download.png" // image from copilot alt="Cooking Class">
+    </div>
+    <div class="text-container">
+      <h2>Welcome to My Recipe Blog</h2>
+      <p>Join me on a culinary adventure where we explore the world of flavors and cooking techniques.</p>
+      <p>Explore easy, delicious recipes and cooking tips that make every meal special.</p>
+      <p>Whether you are a beginner or a pro, let’s cook up something tasty together.</p>
+    </div>
   </main>
 
-
-
   <footer>
-    <p>www.facebook.com</p>
-
+    <p><a href="https://www.facebook.com">Facebook</a> | <a href="https://www.instagram.com">Instagram</a></p>
   </footer>
+  <script>
+    //  I used some js to make the hamburger menu work
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 
 </body>
 </html>

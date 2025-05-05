@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - My Recipe Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+
+  <main>
+    <h2>About Me</h2>
+    <p>Hi, I am Resmi, a food lover and home cook who started this blog to share my passion for creating delicious, simple meals. </p><p>Whether its a quick weeknight or special treat, I am all about making cooking fun and accessible.</p>
+    <div class="image-container">
+        <img src= https://scontent-hel3-1.xx.fbcdn.net/v/t39.30808-6/467747911_2381128958902455_8234207017152446863_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DRv8qK6QW24Q7kNvwHBs-0R&_nc_oc=Adkir4Sco29yaHcTJySc5yq190bkRyzc_tJlOoGHvZKBd_Kv8nEh0V7ZkYQNPwMpzz0&_nc_zt=23&_nc_ht=scontent-hel3-1.xx&_nc_gid=-b8npoOPC8wb_9sattVWBw&oh=00_AfFXSX2RUgeBUIelkp3vfvNUnyKGxUIsWly2dmN3gUjOZg&oe=681912BD width="600" height="400" alt="cooking class">
+    </div>
+
+
+    <h2>Why Cooking?</h2>
+    <p>Cooking isn't just about preparing food—it's an art and a form of expression.</p>    
+    <p> For me, it's a way to connect with family, friends, and cultures around the world.</p>
+    <p>I started this blog to share my experiences, tips, and, of course, my favorite recipes with others.</p>
+
+    <h2>My Signature Receipe, Discover the Ingredients of Paneer Chilly</h2>
+
+  <img src="https://tse2.mm.bing.net/th/id/OIG1.UjAjEZxVGvrRXTlcaGak?pid=ImgGn" alt="Paneer Chilly" usemap="#paneermap" width="600" height="400">
+
+  <map name="paneermap">
+    <!-- Paneer Cubes -->
+    <area shape="rect" coords="50,50,150,150" alt="Paneer Cubes" href="paneer-info.html">
+    <!-- Bell Peppers -->
+    <area shape="circle" coords="400,100,50" alt="Bell Peppers" href="peppers-info.html">
+    <!-- Gravy/Sauce -->
+    <area shape="poly" coords="200,200,250,250,300,200,350,250,400,200" alt="Gravy" href="gravy-info.html">
+  </map>
+
+
+  <footer>
+    <p><a href="https://www.facebook.com">Facebook</a> | <a href="https://www.instagram.com">Instagram</a></p> 
+    
+  </footer>
+
+  <script>
+    // used some js to make the hamburger menu work
+    const hamburger = document.getElementById("hamburger");
+    const navLinks  = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

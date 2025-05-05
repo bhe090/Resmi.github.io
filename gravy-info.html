@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravy/Sauce - My Recipe Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Gravy/Sauce Recipe</h2>
+    <p>The gravy is a rich, spicy, and tangy sauce that complements Paneer Chilly beautifully.</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>1/2 cup tomato puree</li>
+      <li>1 tbsp ginger-garlic paste</li>
+      <li>1/2 cup onion, finely chopped</li>
+      <li>1 tsp garam masala</li>
+      <li>Salt and sugar to taste</li>
+    </ul>
+    <h3>Preparation Steps:</h3>
+    <ol>
+      <li>Heat oil and sauté the onions until golden brown.</li>
+      <li>Add ginger-garlic paste and sauté for 1-2 minutes.</li>
+      <li>Add tomato puree, garam masala, salt, and sugar, and cook until the oil separates.</li>
+      <li>Add water to adjust the consistency and simmer until it thickens.</li>
+    </ol>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://www.facebook.com">Facebook</a> |
+      <a href="https://www.instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    // used some js to make the hamburger menu work
+    const hamburger = document.getElementById("hamburger");
+    const navLinks  = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
